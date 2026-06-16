@@ -23,3 +23,21 @@ Then with tailscale installed on all devices with access, the static IP means th
 ```bash
 100.x.x.x
 ```
+
+### Security Architecture
+
+#### SSH Keys
+
+I used SSH keys to link my laptop, PC, and the server so that, especially during install, I didn't need to consistently input the user password. This also makes the connection more secure betweent he network nodes. The password could be leaked, or bruteforced, but the ssh keys make communications far more secure. This was simple to do by generating the keys for the nodes and then sharing the public keys between them.
+
+#### Firewall
+
+I installed and actived UFW on the server for an aditional level of security for the server network. I then allowed only the ports for Open WebUI, Ollama, and SSH.
+
+#### Tailscale
+
+I decied to use Tailscale VPN for an extra level of local network security. This is mainly because there are many people using my home network so isolating this network makes it more secure. It also removed the need for port forwarding and encrypts the connection for extra safety. The install was easy, only needing tailscale installing on each device then verifying with each device.
+
+#### Service access
+
+Using tailscale, each server port can be accessed securely using the IPs asigned by tailscale and the usual port. This ensures the secure, encrypted access.
