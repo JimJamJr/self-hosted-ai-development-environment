@@ -32,8 +32,8 @@ ssh username@server-ip
 # install
 apt install ufw
 
-# allow services
-ufw allow **/tcp
+# allow SSH service
+ufw allow 22/tcp
 
 # enable
 ufw enable
