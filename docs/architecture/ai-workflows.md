@@ -45,3 +45,50 @@ There are 2 developers that I have available to use. Both have the job of implem
 ### Step 3 - Reviewer
 
 The reviewer does exactly as described, it reviews implemented code. This means identifying edge cases, creating tests, and criticises code. As a result I can create more robust code.
+
+### Step 4 - Documenter
+
+The documenter works to ensure I or anyone else who is trying to understand the code has a detailed development log that tracks the architecture, design decisions, and other important parts of the design or code. It can also be useful for making quick updates to README files when changes are made or new features are added. This is mostly done by llama 3.2 on the server because it is not a very intensive task and it isn't time sensitive so leaving the server to write them is ideal for saving me time and effort.
+
+This process can then be repeated to add new features, improve code, optimise, and tweak design. 
+
+## Project Isolation
+
+To make management of conversations easy, I can set up different projects and chats using Open WebUI so that each of my projects can have a number of dedicated chats. Each chat has memory so I can follow on from where I left off as well as access to the project files which means decisions by the models are well informed and accurate. Some of the general chats most projects have could be:
+- Requirements
+- Architecture
+- Roadmap
+- Research
+- Dev logs
+
+## Roo Code Integration
+
+For easy use of the models while I use VS Code, I use the Roo Code plugin which allowed me to quickly and easily configure each model with its profile. Profiles mean that I can customise the behaviour of the agent generally or on a project specific basis. This means that I can quickly consult or asign tasks to a model while developing a new feature. Roo Code's integration with VS Code also means that working with git and github is much easier. Roo Code is however designed to work with claude mostly but I haven't yet found any integration issues for the Ollama models.
+
+## Benefits, Pitfalls, and Possible Improvements
+
+### Benefits
+
+- No API Costs
+- Data remains local and secure
+- Works offline
+- Project-specific workflows
+- Complete model customisation
+- Unlimited token usage
+- No chronological usage quotas
+
+### Drawbacks
+
+- Hardware limitations
+- Longer processing times
+- Longer response times
+- Limited to open source models
+- Non-perfect integration
+
+### Possible Improvements
+
+- Upgrade PC hardware
+- Upgrade server hardware
+- Configure server to be accessable publicly but securely
+- Run multiple servers in parallel
+- Create a full chat and development integration
