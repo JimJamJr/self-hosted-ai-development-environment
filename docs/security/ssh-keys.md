@@ -12,8 +12,8 @@ This provides a secure method of authentication while also removing the need to 
 
 ## Benefits
 
-* More secure than password-based authentication.
-* Resistant to brute-force password attacks.
-* Industry standard method of securing SSH connections.
-* Passwordless access from trusted development devices.
-* Well suited to managing remote Linux servers and self-hosted infrastructure.
+- More secure than password-based authentication.
+- Resistant to brute-force password attacks.
+- Industry standard method of securing SSH connections.
+- Passwordless access from trusted development devices.
+- Well suited to managing remote Linux servers and self-hosted infrastructure.
