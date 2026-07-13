@@ -1,6 +1,6 @@
 # Firewall (UFW) 
 
-The idea of a firewall install on the server was to reduce the attack surface for the network. I implemented and enabled it so that the server rejects any service that are not whitelisted on the server. This means that only the required ports for services such as remote access, Ollama, and Open WebUI are exposed.
+The firewall install on the server was to reduce the attack surface for the network. It is implemented and enabled so that the server rejects any service that is not whitelisted on the server. This means that only the required ports for services such as remote access, Ollama, and Open WebUI are exposed.
 
 Install was straight forward, I first installed UFW:
 ```bash
